@@ -25,6 +25,9 @@ header .navbar a:hover {
   color: #c91103;
   padding-bottom: 2rem;
 }
+.heading span {
+  color: #f9b714;
+}
 .home {
   background-image: url(images/hot.jpg);
   background-repeat: no-repeat;
@@ -37,4 +40,14 @@ header .navbar a:hover {
 }
 .table{
   color: #f9b714;
+}
+.table:hover{
+  color: #c91103;
+}
+.footer{
+  background-color: #2f1812;
+  color: #f9b714;
+}
+.footer a{
+  color: #c91103;
 }
