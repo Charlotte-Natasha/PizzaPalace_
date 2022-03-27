@@ -25,6 +25,12 @@ header .navbar a:hover {
   color: #c91103;
   padding-bottom: 2rem;
 }
+.home h1{
+  font-size: 8rem;
+}
+.home p{
+  font-size: 2rem;
+}
 .heading span {
   color: #f9b714;
 }
@@ -50,4 +56,7 @@ header .navbar a:hover {
 }
 .footer a{
   color: #c91103;
+}
+.footer a:hover{
+  color: #fff;
 }
