@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  
 }
 section {
   padding: 2rem 9%;
@@ -15,7 +14,7 @@ header {
   background: #f9b714;
   align-items: center;
   padding: 1.5rem 7%;
- position: relative;
+  position: relative;
 }
 header .navbar a {
   margin: 0.4rem;
@@ -26,10 +25,16 @@ header .navbar a:hover {
   color: #c91103;
   padding-bottom: 2rem;
 }
-.home{
-    background-image: url(images/hot.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #f9b714;
-    min-height: 90vh;
+.home {
+  background-image: url(images/hot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f9b714;
+  min-height: 90vh;
+}
+.menus {
+  background-color: #2f1812;
+}
+.table{
+  color: #f9b714;
 }
