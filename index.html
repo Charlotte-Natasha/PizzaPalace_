@@ -51,7 +51,7 @@
     </section>
     <!--Order Section-->
     <section class="order" id="order">
-      <h1 class="heading text-center">Order <span>Here</span></h1>
+      <h1 class="heading text-center">--Order <span>Here</span>--</h1>
 
       <div class="menu">
         <div class="menu-section"></div>
@@ -67,7 +67,9 @@
                   15-30mins
                 </p>
 
-                <button>Order</button>
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"
+                                data-bs-target="#orderModal"> Order
+                            </button>
               </div>
             </div>
           </div>
@@ -82,7 +84,9 @@
                   <span class="fas fa-clock"></span>
                   15-30mins
                 </p>
-                <button>Order</button>
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"
+                data-bs-target="#orderModal"> Order
+            </button>
               </div>
             </div>
           </div>
@@ -96,8 +100,9 @@
                   <span class="fas fa-clock"></span>
                   15-30mins
                 </p>
-
-                <button>Order</button>
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"
+                data-bs-target="#orderModal"> Order
+            </button>
               </div>
             </div>
           </div>
@@ -113,7 +118,9 @@
                   <span class="fas fa-clock"></span>
                   15-30mins
                 </p>
-                <button>Order</button>
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">Order
+                            </button>
               </div>
             </div>
           </div>
@@ -127,8 +134,9 @@
                   <span class="fas fa-clock"></span>
                   15-30mins
                 </p>
-                >
-                <button>Order</button>
+                
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"  data-bs-target="#orderModal"> Order
+                            </button>
               </div>
             </div>
           </div>
@@ -142,14 +150,128 @@
                   <span class="fas fa-clock"></span>
                   15-30mins <span></span>
                 </p>
-
-                <button>Order</button>
+                <button type="button" class="btn btn-warning orderBtn m-2" data-bs-toggle="modal"
+                data-bs-target="#orderModal"> Order
+            </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Order Modal-->
+        <div class="modal fade" id="orderModal" class="orderModal" tabindex="-1" aria-labelledby="orderModal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalH"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="row g-3" id="form">
+                        <div class="col-md-12 form-group p-2">
+                            <div>Select Crust</div>
+                            <div id="crust">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="crust" id="crispy" value="300">
+                                    <label class="form-check-label" for="crispy">Crispy</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="crust" id="stuffed" value="400">
+                                    <label class="form-check-label" for="stuffed">Stuffed</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="crust" id="glutenFree"
+                                        value="500">
+                                    <label class="form-check-label" for="glutenFree">Gluten Free</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 form-group p-2">
+                            <div>Select Toppings</div>
+                            <div id="toppings">
+                                <div class="form-check form-check-inline" required>
+                                    <input class="form-check-input" name="toppings" type="checkbox" id="extraCheese"
+                                        value="120">
+                                    <label class="form-check-label" for="extraCheese">Extra Cheese</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" name="toppings" type="checkbox" id="pepperoni"
+                                        value="180">
+                                    <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" name="toppings" type="checkbox" id="bacon"
+                                        value="150">
+                                    <label class="form-check-label" for="bacon">Bacon</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" name="toppings" type="checkbox" id="mushroom"
+                                        value="100">
+                                    <label class="form-check-label" for="mushroom">Mushroom</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 form-group p-2">
+                            <div>Select Size</div>
+                            <div id="size">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="size" id="small" value="600">
+                                    <label class="form-check-label" for="small">Small</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="size" id="medium" value="900">
+                                    <label class="form-check-label" for="medium">Medium</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="size" id="large" value="1200">
+                                    <label class="form-check-label" for="large">Large</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 form-group p-2">
+                            <div>Select Option</div>
+                            <div id="delivery">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="delivery" id="deliveryFalse"
+                                        value="false">
+                                    <label class="form-check-label" for="deliveryFalse">Pickup</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="delivery" id="deliveryTrue"
+                                        value="true">
+                                    <label class="form-check-label" for="deliveryTrue">Delivery</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 form-group p-2">
+                            <label class="form-label" for="pizzaQuantity">Number of Pizza</label>
+                            <input type="number" class="form-control" id="pizzaQuantity" required value="1" min="1"
+                                max="20">
+                        </div>
+                        <button type="button" class="btn btn-success col-md-3" id="modalSubmit">Add To Cart</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="formCancelBtn" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+      </div>
+    </div>
+    
+  </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
