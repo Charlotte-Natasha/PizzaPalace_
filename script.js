@@ -14,6 +14,25 @@ submitBtn.click(function(){
     let deliveryFalse = $('#deliveryFalse').val();
     let deliveryTrue = $('#deliveryTrue').val();
     console.log(size, crust, toppings, quantity, deliveryFalse, deliveryTrue);
+
+    //generate price
+    let headingTwo =  $('.modal-header').find ('h5').text();
+
+    let tableData = `
+<tr>
+<td>${headingTwo}
+</td>
+<td>${crust}</td>
+<td>${toppings}</td>
+<td>${size}</td>
+<td>${quantity}</td>
+
+
+</tr>
+
+`
+    let tableBody = $('tbody');
+    tableBody[0].innerHTML += tableData;
 });
 
 
