@@ -7,7 +7,7 @@ $(document).ready(function(){
 //Getting data 
 let submitBtn= $('#modalSubmit')
 submitBtn.click(function(){
-    let size = $('input[name = size]').val();
+    let size = $('input[name=size]').val();
     let crust = $('input[name = crust]').val();
     let toppings = $('input[name = toppings]').val();
     let quantity = $('#pizzaQuantity').val();
@@ -34,6 +34,7 @@ submitBtn.click(function(){
     let tableBody = $('tbody');
     tableBody[0].innerHTML += tableData;
 });
+
 
 
 })
