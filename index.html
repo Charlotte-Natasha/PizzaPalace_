@@ -285,24 +285,30 @@
 </div>
 </section>
 <!--Delivery Modal-->
- <!--Select Delivery Modal-->
- <button type="button" id="deliveryBtn" class="btn btn-primary" data-bs-toggle="modal"
- data-bs-target="#deliveryModal">
-</button>
-<div class="modal fade" id="deliveryModal" tabindex="-1" aria-labelledby="deliveryModal" aria-hidden="true">
- <div class="modal-dialog">
-     <div class="modal-content">
-         <div class="modal-body">
-             Delivery will cost an extra Ksh.200 depending on location.
-         </div>
-         <div class="modal-footer">
-             <button type="button" class="btn btn-success" id="deliveryProceed">Proceed</button>
-             <button type="button" class="btn btn-danger" id="deliveryCanceled"
-                 data-bs-dismiss="modal">Cancel</button>
-         </div>
-     </div>
- </div>
+ <!--Select Delivery-->
+<section class="delivery">
+<div class="deliver">
+  <h1 class="text-center">--Delivery--</h1>
+  <button class="btn-lg" id="deliver">Deliver</button> 
+  <button class="btn-lg" id="pickUp">Pick-up</button>
+  <div class="details hidden">
+<label for="name">Name</label>
+<input type="text" name="" required placeholder="Your name" id="name">
+<label for="email">Email</label>
+<input type="text" name="email" required placeholder="@gmail.com" id="email">
+<label for="location">Location</label>
+<input type="text" name="location" required placeholder="e.g Umoja" id="location">
+<label for="street">Street</label>
+<input type="street" name="street" required  id="street">
+<label for="houseNo">House Number</label>
+<input type="text" name="houseNo" id="houseNo">
+<input type="submit" value="Confirm order">
+  </div>
+  <div class="pickUp hidden">
+    <p>Our nearest location is at <br>Ronald Ngala, Mfangano Street </p>
+  </div>
 </div>
+</section>
 <!--Reviews-->
 <section class="reviews">
 	<div class="customer-feedback">
