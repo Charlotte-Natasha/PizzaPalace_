@@ -60,3 +60,6 @@ header .navbar a:hover {
 .footer a:hover{
   color: #fff;
 }
+img{
+  width: 100%;
+}
